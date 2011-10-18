@@ -21,13 +21,22 @@
 #ifndef Path_H_
 #define Path_H_
 
+/**
+ * Class representing a path of linked Nodes.
+ */
 template <typename TreeType>
 class Path
 {
   public:
     typename TreeType::TreeNodeList _path;
 
+   /**
+    * Constructor.
+    */
     Path() { }
+   /**
+    * Constructor.
+    */
     Path(typename TreeType::value_type* Node) { addToPath(Node); }
 
 //    Path(const Path<TreeType>& orig) { this->_path = orig._path; }
